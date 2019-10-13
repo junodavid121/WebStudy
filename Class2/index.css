@@ -1,3 +1,6 @@
+body, html {
+    height: 100%;
+}
 body {
     font-family: 'Roboto', serif;
     margin: 0px;
@@ -6,7 +9,9 @@ body {
 #name {
     position: relative;
     background: #42cbf5;
-    height: 300px;
+    top: 60px;
+    height: 600px;
+    z-index: -1;
 }
 
 #name p{
@@ -17,10 +22,31 @@ body {
     transform: translate(-50%, -50%);
 }
 
+footer {
+    position: absolute;
+    bottom: 0%;
+    background: grey;
+    color: black;
+    width: 100%;
 
+}
 
+#main {
+    position: relative;
+    background: green;
+}
 
+#left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+}
 
+#right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
 
 
 /* 
