@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', serif;
+    margin: 0px;
+}
+
+#name {
+    position: relative;
+    background: #42cbf5;
+    height: 300px;
+}
+
+#name p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+/* 
+#main {
+    font-size: 20px;
+} */
+
+
+/* .yellow {
+    color: yellow;
+}
+
+#pa {
+    color: green;
+} */
+
+/* div {
+    border: 1px solid green;
+    height: 100%;
+    min-height: 10px;
+    padding: 10px;
+    margin: 10px;
+} */
