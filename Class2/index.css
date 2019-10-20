@@ -1,12 +1,14 @@
-body, html {
+body,
+html {
     height: 100%;
+    min-height: 100%;
 }
 body {
     font-family: 'Roboto', serif;
     margin: 0px;
 }
 
-#name {
+#board {
     position: relative;
     background: #42cbf5;
     top: 60px;
@@ -14,59 +16,52 @@ body {
     z-index: -1;
 }
 
-#name p{
+#board board-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* -ms-transform: translate(-50%, -50%); */
     transform: translate(-50%, -50%);
+
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 300px; */
+    /* flex-direction: column; */
+    background: #423bf5;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+#left,
+#right {
+    width: 50%;
+    height: 100%;
+    font-size: 100px;
+}
+
+#left {
+    flex-basis: 33%;
+    background: pink;
+}
+
+#left:hover {
+    background: gold;
+}
+
+#right {
+    flex-basis: 66%;
 }
 
 footer {
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     background: grey;
     color: black;
     width: 100%;
-
 }
-
-#main {
-    position: relative;
-    background: green;
-}
-
-#left {
-    position: absolute;
-    left: 0;
-    width: 50%;
-}
-
-#right {
-    position: absolute;
-    right: 0;
-    width: 50%;
-}
-
-
-/* 
-#main {
-    font-size: 20px;
-} */
-
-
-/* .yellow {
-    color: yellow;
-}
-
-#pa {
-    color: green;
-} */
-
-/* div {
-    border: 1px solid green;
-    height: 100%;
-    min-height: 10px;
-    padding: 10px;
-    margin: 10px;
-} */
