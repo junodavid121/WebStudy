@@ -38,7 +38,7 @@ export class App extends Component {
                 </div>
         
                 <footer>
-                    <p>David</p>
+                    <p>David Chen</p>
                 </footer>
         
             </div>

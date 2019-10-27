@@ -29,7 +29,13 @@ body {
     color: white;
     margin: 0 20px;
     padding: 16px;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 20px;
+    height: 50px;
+}
+
+a:hover {
+    background-color: rgba(135, 206, 250, 50);
 }
 
 /* Content*/
@@ -56,9 +62,8 @@ body {
     background: white;
     display: flex;
     height: 800px;
-    margin-bottom: 0px;
+    margin: 10px 10px 0px 10px;
     padding-bottom: 30px;
-    margin: 20px;
 }
 
 #main .left {
@@ -79,14 +84,10 @@ body {
     background: white;
 }
 
-.img-right {
-    /* width: 100%; */
-}
-
 /* Footer */
 
 footer {
-    border: brown 2px solid;
+    background-color: rgba(61, 60, 60, 50%);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -94,4 +95,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer p {
+    color: beige;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0px;
 }
