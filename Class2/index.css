@@ -1,4 +1,4 @@
-body{
+body {
     min-height: 100%;
     height: 100%;
 }
@@ -6,14 +6,11 @@ body{
 body {
     font-family: 'Roboto', serif;
     margin: 0px;
-    border: #000000 2px solid;
     position: relative;
 }
 
 /* Navigation */
-#nav{
-    background: white;
-    border: black 2px solid;
+#nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,66 +18,67 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 30px;
+    height: 50px;
     align-items: center;
 }
 
 /* spacing of nav */
-#nav a{
+#nav a {
+    text-decoration: none;
+    color: white;
     margin: 0 20px;
+    padding: 16px;
+    font-size: 16px;
 }
 
 /* Class left right */
 
-.left{
+#main .left {
     background: red;
 }
 
-.right{
+#main .right {
     background: orange;
 }
 
-
 /* Content*/
-#board{
-    border: rgb(134, 156, 73) 2px solid;
-    margin-top: 30px;
-    background: url(Road.jpg) no-repeat 70% center;
+#board {
+    background: url(Road.jpg) no-repeat center;
     background-size: cover;
-    height: 300px;
+    height: calc(100vh - 30px);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 100;
-    font-size: 80px;
+    font-size: 120px;
 }
 
+@media screen and (max-width: 780px) {
+    #board {
+        font-size: 80px;
+    }
+}
 
-
-#main{
+#main {
     background: white;
-    border: black 2px solid;
     display: flex;
     height: 800px;
     margin-bottom: 30px;
 }
 
 #main .right,
-#main .left{
+#main .left {
     flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-
 /* Footer */
 
-footer{
+footer {
     border: brown 2px solid;
     position: absolute;
     bottom: 0;
