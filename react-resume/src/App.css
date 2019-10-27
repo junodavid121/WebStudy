@@ -1,22 +1,91 @@
-.App {
-  text-align: center;
+body {
+  min-height: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  font-family: 'Roboto', serif;
+  margin: 0px;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+/* spacing of nav */
+#nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  padding: 16px;
+  font-size: 16px;
+}
+
+/* Class left right */
+
+#main .left {
+  background: red;
+}
+
+#main .right {
+  background: orange;
+}
+
+/* Content*/
+#board {
+  background: url(Road.jpg) no-repeat center;
+  background-size: cover;
+  height: calc(100vh - 30px);
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  font-size: 120px;
 }
 
-.App-link {
-  color: #09d3ac;
+@media screen and (max-width: 780px) {
+  #board {
+      font-size: 80px;
+  }
 }
+
+#main {
+  background: white;
+  display: flex;
+  height: 800px;
+  margin-bottom: 30px;
+}
+
+#main .right,
+#main .left {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  border: brown 2px solid;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
