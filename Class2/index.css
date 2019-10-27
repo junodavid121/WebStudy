@@ -1,67 +1,92 @@
-body,
-html {
-    height: 100%;
+body{
     min-height: 100%;
+    height: 100%;
 }
+
 body {
     font-family: 'Roboto', serif;
     margin: 0px;
-}
-
-#board {
+    border: #000000 2px solid;
     position: relative;
-    background: #42cbf5;
-    top: 60px;
-    height: 600px;
-    z-index: -1;
 }
 
-#board board-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 120px;
-    line-height: 120px;
-    font-weight: bold;
-    color: white;
-}
-
-#main {
+/* Navigation */
+#nav{
+    background: white;
+    border: black 2px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    /* height: 300px; */
-    /* flex-direction: column; */
-    background: #423bf5;
-    /* justify-content: space-around; */
+    justify-content: space-between;
+    height: 30px;
     align-items: center;
 }
 
-#left,
-#right {
-    width: 50%;
-    height: 100%;
-    font-size: 100px;
+/* spacing of nav */
+#nav a{
+    margin: 0 20px;
 }
 
-#left {
-    flex-basis: 33%;
-    background: pink;
+/* Class left right */
+
+.left{
+    background: red;
 }
 
-#left:hover {
-    background: gold;
+.right{
+    background: orange;
 }
 
-#right {
-    flex-basis: 66%;
+
+/* Content*/
+#board{
+    border: rgb(134, 156, 73) 2px solid;
+    margin-top: 30px;
+    background: url(Road.jpg) no-repeat 70% center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+    font-size: 80px;
 }
 
-footer {
+
+
+#main{
+    background: white;
+    border: black 2px solid;
+    display: flex;
+    height: 800px;
+    margin-bottom: 30px;
+}
+
+#main .right,
+#main .left{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Footer */
+
+footer{
+    border: brown 2px solid;
     position: absolute;
     bottom: 0;
-    background: grey;
-    color: black;
     width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
