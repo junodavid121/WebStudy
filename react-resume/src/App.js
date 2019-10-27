@@ -20,10 +20,9 @@ export const App = () => {
 
         <div id="main">
             <div class="left">
-                <p>left</p>
             </div>
             <div class="right">
-                <p>right</p>
+                <img class="img-right" src="https://images.unsplash.com/photo-1558980664-3a031cf67ea8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></img>
             </div>
         </div>
 
