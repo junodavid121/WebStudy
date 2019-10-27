@@ -27,7 +27,7 @@ export const App = () => {
         </div>
 
         <footer>
-            <p>David</p>
+            <p>David Chen</p>
         </footer>
 
     </div>
